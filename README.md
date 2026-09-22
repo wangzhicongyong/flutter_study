@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # flutter_application_1
 
 A new Flutter project.
@@ -58,3 +59,7 @@ samples, guidance on mobile development, and a full API reference.
     git push -u origin main
     # 检查分之
     git checkout 
+=======
+# flutter_study
+flutter study many demo
+>>>>>>> 50eaa80dc13e93ba8c0d1ce2cbc7f65d77980e36
