@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Dart CLI 当前文件",
+            "type": "dart",
+            "request": "launch",
+            "program": "${file}",
+            "console": "terminal",
+            "deviceId": "dart-vm"
+        }
+    ]
+}
