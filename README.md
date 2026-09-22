@@ -43,4 +43,18 @@ samples, guidance on mobile development, and a full API reference.
 8. 点击左侧的github图标，可以进行可视化操作，等同于命令：
     git add .
     git commit -m "提示信息"
-9. 最后进行远程连接github,推送到远程仓库：git remote add origin https://github.com/wangzhicongyong/flutter_study.git
+9. 最后进行远程连接github：git remote add origin https://github.com/wangzhicongyong/flutter_study.git
+10. # 4. 将当前本地分支重命名为 main   使用命令：git branch -M main
+11. # 5. 推送并绑定远程main分支        使用命令：git push -u origin main
+# =====================================================================
+# 如果推送有问题，可以使用git remote -v 检查远程仓库是否绑定成功
+# 我无法提交成功，是因为我在创建新的仓库的时候，你在 GitHub 网页新建仓库的时候，如果勾选了 `Add a README file` / `.gitignore`，
+    GitHub 会自动在远程 main 分支生成一次提交，而自己的本地项目也已经git初始化过，有自己的readme，。gitignoore文件发生冲突，阻止覆盖，
+    所以提交失败。
+    解决方案：
+    # 拉取远程main，允许合并两个没有关联的git历史
+    git pull origin main --allow-unrelated-histories
+    # 拉取完成后，再推送
+    git push -u origin main
+    # 检查分之
+    git checkout 
